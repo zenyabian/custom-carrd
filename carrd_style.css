@@ -1,0 +1,195 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body {  
+    background-image: url('rainy_background.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: yellow;
+}
+  
+::selection {
+    background: yellow;
+}
+
+.image-container {
+    position: relative;
+    display: block;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 12px;
+    border: 1px dashed black;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    transition: opacity 0.2s ease;
+}
+
+.image-container .caption {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: clamp(0.5em, 2vw, 1em);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 3px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    text-align: center;
+}
+
+.image-container:hover img {
+    opacity: 0.8;
+}
+
+.image-container:hover .caption {
+    opacity: 1;
+}
+
+.instagram-embed {
+    max-height: 270px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link:hover{
+    color: white !important;
+    text-decoration-line: underline overline;
+    text-underline-offset: 6px;
+    text-decoration-style: dotted;
+}
+
+.navbar {
+    justify-content: center;
+    border: 1px dashed black;
+    background-color: #B8CABA;
+    padding: 0;
+}
+
+.navbar-toggler{
+    border: none;
+    outline: none !important;
+}
+
+.top-col{
+    background-color: #B8CABA;
+    border: 1px dashed black;
+}
+
+.time-text {
+    word-wrap: break-word; 
+    white-space: normal; 
+    margin-bottom: 0px;
+}
+
+.title-p {
+    margin-bottom: 0px;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#about-col {
+    padding: 0 10px 0 0;
+    font-size: 0.9em;
+}
+
+#album-image {
+    width: 100%;
+    max-width: 160px;
+    border: 1px dashed black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#home-image {
+    width: 100%;;
+    border: 1px dashed black;
+    margin-bottom: 10px;
+}
+
+#main-card {
+    background-color: white;
+    width: 70%;
+    max-width: 400px;
+    min-width: 360px;
+    margin: 0 auto;
+    padding: 15px;
+    max-height: 600px;
+    border: 1px dashed black;
+    margin-top: 0px;
+    animation: fadeIn 0.7s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        margin-top: 10px;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#music-text {
+    padding: 0;
+    font-size: 0.9em;
+    margin: 0 0 5px 0;
+}
+
+#pfp-image {
+    width: 100%;
+    max-width: 130px;
+    border: 1px dashed black;
+    margin-bottom: 10px;
+}
+
+#second-image {
+    width: 40%;
+    margin-right: 10px;
+}
+
+#spotify-preview {
+    padding: 0;
+    margin: 0;
+}
+
+#time-col {
+    text-align: right;
+    padding-right: 0px;
+}
+
+#top-row {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
