@@ -76,7 +76,7 @@ body {
 
 .nav-link:hover{
     color: white !important;
-    text-decoration-line: underline overline;
+    text-decoration-line: underline;
     text-underline-offset: 6px;
     text-decoration-style: dotted;
 }
